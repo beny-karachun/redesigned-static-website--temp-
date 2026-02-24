@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIATOR — אטרקציה לאירועים ופרסום בתא טייס אמיתי</title>
+    <meta name="description"
+        content="אנו באוויאטור מעניקים אטרקציה לאירועים ופרסום לעסקים בעזרת תא טייס אמיתי הנע בכבישי הארץ. סימולטור טיסה בתא טייס אמיתי של מטוס סילוני.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">AVIATOR</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#services">שירותים</a>
+                <a href="#about">אודותינו</a>
+                <a href="#gallery">גלריה</a>
+                <a href="#contact">צור קשר</a>
+                <a href="tel:+972523735775" class="nav-cta">📞 052-373-5775</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="תפריט">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-event.jpg" alt="אירוע עם תא טייס אמיתי">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">לראשונה בישראל</div>
+            <h1 class="hero-title reveal reveal-delay-1">
+                חוויית טיסה<br>
+                <span class="highlight">בתא טייס אמיתי</span>
+            </h1>
+            <p class="hero-subtitle reveal reveal-delay-2">
+                סימולטור טיסה בתא טייס אמיתי של מטוס סילוני ששירת בחיל האוויר הישראלי — אטרקציה ייחודית ובלתי נשכחת
+                לאירועים, ימי כיף, חגיגות ופרסום
+            </p>
+            <div class="hero-actions reveal reveal-delay-3">
+                <a href="tel:+972523735775" class="btn-primary">📞 הזמינו עכשיו</a>
+                <a href="#services" class="btn-secondary">גלו את השירותים שלנו ↓</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>גלול למטה</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag reveal">✈ השירותים שלנו</div>
+                <h2 class="section-title reveal reveal-delay-1">הופכים כל אירוע<br>לחוויה בלתי נשכחת</h2>
+                <p class="section-subtitle reveal reveal-delay-2">מגוון שירותים עם תא טייס אמיתי — מימי הולדת ועד
+                    אירועים עסקיים</p>
+            </div>
+            <div class="services-grid">
+                <a href="bar-mitzvah.html" class="service-card reveal">
+                    <img src="images/service-barmitzvah.jpg" alt="בר/בת מצווה">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">🎂</div>
+                        <h3>בר / בת מצווה</h3>
+                        <p>הזדמנות של פעם בחיים — הילד/ה שלכם וחבריו נכנסים לתא טייס אמיתי ומבצעים טיסות, נחיתות ומשימות
+                            מרגשות!</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+                <a href="business-events.html" class="service-card reveal reveal-delay-1">
+                    <img src="images/service-events.jpg" alt="אירועים עסקיים">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">🏢</div>
+                        <h3>אירועים עסקיים</h3>
+                        <p>ימי כיף וגיבוש לעובדים, תערוכות והפנינגים עם אטרקציה ייחודית שתיזכר לכולם</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+                <a href="hall-entry.html" class="service-card reveal reveal-delay-2">
+                    <img src="images/service-hall.jpg" alt="כניסה לאולם בתא טייס">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">🌟</div>
+                        <h3>כניסה לאולם בתא טייס</h3>
+                        <p>כניסה מיוחדת ובלתי נשכחת לאולם האירועים — גורמים לאורחים להפיל את הלסת!</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+                <a href="private-events.html" class="service-card reveal reveal-delay-3">
+                    <img src="images/service-private.jpg" alt="אירועים פרטיים">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">🎉</div>
+                        <h3>אירועים פרטיים</h3>
+                        <p>חתונות, מסיבות, ימי הולדת וחגיגות — הפכו את האירוע שלכם למיוחד במינו</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+                <a href="advertising.html" class="service-card reveal reveal-delay-4">
+                    <img src="images/service-advertising.jpg" alt="פרסום">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">📣</div>
+                        <h3>פרסום נייד / קבוע</h3>
+                        <p>קידום מותג, חברה, מוצר או מבצע שיווקי עם תא טייס אמיתי של מטוס סילוני</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+                <a href="workshop.html" class="service-card reveal reveal-delay-5">
+                    <img src="images/service-workshops.jpg" alt="סדנה מטוסי גבס">
+                    <div class="service-card-overlay">
+                        <div class="service-card-icon">✏️</div>
+                        <h3>סדנה — מטוסי גבס</h3>
+                        <p>סדנא ייחודית להכנת מטוסי גבס לצביעה — עשרות דגמי מטוסים מההכי קטן להכי גדול</p>
+                    </div>
+                    <div class="service-card-arrow">←</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CLIENTS CAROUSEL ═══ -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag reveal">🏢 לקוחות שלנו</div>
+                <h2 class="section-title reveal reveal-delay-1">נשמח לראות אותכם<br>בין לקוחותינו!</h2>
+                <p class="section-subtitle reveal reveal-delay-2">חברות מובילות, מוסדות ממשלתיים ורשויות מקומיות שבחרו
+                    באוויאטור</p>
+            </div>
+        </div>
+        <div class="clients-track-wrapper reveal">
+            <div class="clients-track">
+                <!-- Set 1 — exact pairings from aviator.co.il -->
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-elbit.jpg" alt="Elbit Systems"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/elbit.jpg" alt="Elbit Systems"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-checkpoint.jpg" alt="Check Point"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/checkpoint.jpg" alt="Check Point"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-bezeq.jpg" alt="בזק בינלאומי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/bezeq.jpg" alt="בזק בינלאומי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-cabiran.jpg" alt="Cabiran"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/cabiran.jpg" alt="Cabiran"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kanfit.jpg" alt="Kanfit"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/kanfit.jpg" alt="Kanfit"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-hp.jpg" alt="HP" loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/hp.jpg" alt="HP"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-misterfix.jpg" alt="מיסטר פיקס"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/misterfix.jpg" alt="מיסטר פיקס"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-astronautics.jpg" alt="Astronautics"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/astronautics.jpg" alt="Astronautics"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-cisco.jpg" alt="CISCO" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/cisco.jpg" alt="CISCO"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kkl.jpg" alt="KKL" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/kkl.jpg" alt="KKL"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-intel.jpg" alt="Intel" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/intel.jpg" alt="Intel"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-mod.jpg" alt="משרד הביטחון"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/mod.jpg" alt="משרד הביטחון"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-zahal.jpg" alt="צה״ל" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/zahal.jpg" alt="צה״ל שלנו"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-iryamim.jpg" alt="קניון עיר ימים"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/iryamim.jpg" alt="קניון עיר ימים"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-haifa.jpg" alt="עיריית חיפה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/haifa.jpg" alt="עיריית חיפה"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-symantec.jpg" alt="Symantec"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/symantec.jpg" alt="Symantec"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-maccabi.jpg" alt="מכבי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/maccabi.jpg" alt="מכבי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-malamteam.jpg" alt="Malam Team"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/malamteam.jpg" alt="Malam Team"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-police.jpg" alt="משטרת ישראל"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/police.jpg" alt="משטרת ישראל"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-metalicone.jpg" alt="Metalicone"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/metalicone.jpg" alt="Metalicone"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-gigamon.jpg" alt="Gigamon"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/gigamon.jpg" alt="Gigamon"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-yadiryamim.jpg" alt="ידי ימים"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/yadiryamim.jpg" alt="ידי ימים"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-migdalhaemek.jpg" alt="מגדל העמק"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/migdalhaemek.jpg" alt="מגדל העמק"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-petachtikva.jpg" alt="פתח תקווה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/petachtikva.jpg" alt="פתח תקווה"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kiriatmalachi.jpg" alt="קריית מלאכי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/kiriatmalachi.png" alt="קריית מלאכי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-ilanramon.jpg" alt="אילן רמון"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/ilanramon.jpg" alt="אילן רמון"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-starashdod.jpg" alt="סטאר אשדוד"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/starashdod.jpg" alt="סטאר אשדוד"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-petachtikva2.jpg" alt="פתח תקווה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/petachtikva2.png" alt="פתח תקווה"></div>
+                </div>
+                <!-- Duplicate set for seamless infinite scroll -->
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-elbit.jpg" alt="Elbit Systems"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/elbit.jpg" alt="Elbit Systems"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-checkpoint.jpg" alt="Check Point"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/checkpoint.jpg" alt="Check Point"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-bezeq.jpg" alt="בזק בינלאומי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/bezeq.jpg" alt="בזק בינלאומי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-cabiran.jpg" alt="Cabiran"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/cabiran.jpg" alt="Cabiran"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kanfit.jpg" alt="Kanfit"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/kanfit.jpg" alt="Kanfit"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-hp.jpg" alt="HP" loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/hp.jpg" alt="HP"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-misterfix.jpg" alt="מיסטר פיקס"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/misterfix.jpg" alt="מיסטר פיקס"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-astronautics.jpg" alt="Astronautics"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/astronautics.jpg" alt="Astronautics"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-cisco.jpg" alt="CISCO" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/cisco.jpg" alt="CISCO"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kkl.jpg" alt="KKL" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/kkl.jpg" alt="KKL"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-intel.jpg" alt="Intel" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/intel.jpg" alt="Intel"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-mod.jpg" alt="משרד הביטחון"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/mod.jpg" alt="משרד הביטחון"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-zahal.jpg" alt="צה״ל" loading="lazy">
+                    </div>
+                    <div class="client-card-logo"><img src="images/clients/zahal.jpg" alt="צה״ל שלנו"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-iryamim.jpg" alt="קניון עיר ימים"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/iryamim.jpg" alt="קניון עיר ימים"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-haifa.jpg" alt="עיריית חיפה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/haifa.jpg" alt="עיריית חיפה"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-symantec.jpg" alt="Symantec"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/symantec.jpg" alt="Symantec"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-maccabi.jpg" alt="מכבי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/maccabi.jpg" alt="מכבי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-malamteam.jpg" alt="Malam Team"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/malamteam.jpg" alt="Malam Team"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-police.jpg" alt="משטרת ישראל"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/police.jpg" alt="משטרת ישראל"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-metalicone.jpg" alt="Metalicone"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/metalicone.jpg" alt="Metalicone"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-gigamon.jpg" alt="Gigamon"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/gigamon.jpg" alt="Gigamon"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-yadiryamim.jpg" alt="ידי ימים"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/yadiryamim.jpg" alt="ידי ימים"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-migdalhaemek.jpg" alt="מגדל העמק"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/migdalhaemek.jpg" alt="מגדל העמק"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-petachtikva.jpg" alt="פתח תקווה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/petachtikva.jpg" alt="פתח תקווה"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-kiriatmalachi.jpg" alt="קריית מלאכי"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/kiriatmalachi.png" alt="קריית מלאכי"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-ilanramon.jpg" alt="אילן רמון"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/ilanramon.jpg" alt="אילן רמון"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-starashdod.jpg" alt="סטאר אשדוד"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/starashdod.jpg" alt="סטאר אשדוד"></div>
+                </div>
+                <div class="client-card">
+                    <div class="client-card-photo"><img src="images/clients/event-petachtikva2.jpg" alt="פתח תקווה"
+                            loading="lazy"></div>
+                    <div class="client-card-logo"><img src="images/clients/petachtikva2.png" alt="פתח תקווה"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <div class="section-tag">✈ מי אנחנו</div>
+                    <h2>אנחנו <span class="highlight-text">AVIATOR</span> —<br>מביאים את השמיים אליכם</h2>
+                    <p>אנו באוויאטור מעניקים אטרקציה לאירועים ופרסום לעסקים בעזרת תא טייס אמיתי הנע בכבישי הארץ.</p>
+                    <p>סימולטור טיסה בתא טייס אמיתי של מטוס סילוני מתאים ליחידים, קבוצות, מסיבות ימי הולדת לילדים,
+                        אירועי חברה, צילומים מיוחדים לחתן/כלה, בר/בת מצווה, חתונות, ומסיבות שונות.</p>
+                    <p>בעזרת סימולטור טיסה בתא הטייס של מטוס אמיתי הופכים לאירוע מיוחד במינו ובלתי נשכח!</p>
+                    <div class="about-stats">
+                        <div class="stat-item reveal reveal-delay-1">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">שנות ניסיון</span>
+                        </div>
+                        <div class="stat-item reveal reveal-delay-2">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">אירועים</span>
+                        </div>
+                        <div class="stat-item reveal reveal-delay-3">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">שביעות רצון</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images reveal reveal-delay-2">
+                    <div class="about-img-main">
+                        <img src="images/hero-cockpit.jpg" alt="תא טייס אמיתי באירוע">
+                    </div>
+                    <div class="about-img-float">
+                        <img src="images/about-1.jpg" alt="AVIATOR בפעולה">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag reveal">📸 הגלריה שלנו</div>
+                <h2 class="section-title reveal reveal-delay-1">רגעים בלתי נשכחים</h2>
+                <p class="section-subtitle reveal reveal-delay-2">תמונות מאירועים אמיתיים שלנו — כי תמונה אחת שווה אלף
+                    מילים</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal"><img src="images/hero-event.jpg" alt="אירוע עם תא טייס"></div>
+                <div class="gallery-item reveal reveal-delay-1"><img src="images/gallery-1.jpg" alt="גלריה 1"></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="images/gallery-2.jpg" alt="גלריה 2"></div>
+                <div class="gallery-item reveal reveal-delay-3"><img src="images/gallery-3.jpg" alt="גלריה 3"></div>
+                <div class="gallery-item reveal reveal-delay-1"><img src="images/gallery-4.jpg" alt="גלריה 4"></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="images/gallery-5.jpg" alt="גלריה 5"></div>
+                <div class="gallery-item reveal reveal-delay-3"><img src="images/event-exhibition.jpg" alt="תערוכה">
+                </div>
+            </div>
+            <div class="gallery-cta reveal">
+                <a href="gallery.html" class="btn-secondary">צפו בכל הגלריה →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="section-tag">📬 צרו קשר</div>
+                    <h2>מוכנים להמריא?</h2>
+                    <p>יש לכם שאלה, רעיון או רוצים להזמין? תרגישו חופשי לפנות אלינו ואנו נשמח לעזור!</p>
+                    <div class="contact-methods">
+                        <a href="tel:+972523735775" class="contact-method">
+                            <div class="contact-method-icon">📱</div>
+                            <div class="contact-method-text">
+                                <h4>טלפון נייד</h4>
+                                <p>052-373-5775</p>
+                            </div>
+                        </a>
+                        <a href="tel:+972747019987" class="contact-method">
+                            <div class="contact-method-icon">☎️</div>
+                            <div class="contact-method-text">
+                                <h4>טלפקס משרד</h4>
+                                <p>074-701-9987</p>
+                            </div>
+                        </a>
+                        <a href="mailto:a0523735775a@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">✉️</div>
+                            <div class="contact-method-text">
+                                <h4>אימייל</h4>
+                                <p>a0523735775a@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form reveal reveal-delay-2">
+                    <h3>שלחו לנו הודעה</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>שם מלא</label>
+                                <input type="text" placeholder="הכנס/י את שמך" required>
+                            </div>
+                            <div class="form-group">
+                                <label>טלפון</label>
+                                <input type="tel" placeholder="מספר טלפון" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>אימייל</label>
+                            <input type="email" placeholder="כתובת אימייל">
+                        </div>
+                        <div class="form-group">
+                            <label>הודעה</label>
+                            <textarea placeholder="ספר/י לנו על האירוע שלכם..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">שלח הודעה ✈</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">AVIATOR</div>
+                <div class="footer-links">
+                    <a href="#services">שירותים</a>
+                    <a href="#about">אודותינו</a>
+                    <a href="#gallery">גלריה</a>
+                    <a href="#contact">צור קשר</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Aviator כל הזכויות שמורות | ניתן לבצע הזמנות לכל רחבי הארץ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
