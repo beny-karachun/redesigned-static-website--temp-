@@ -54,7 +54,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    max-width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -64,7 +64,7 @@ body {
     color: var(--text-primary);
     direction: rtl;
     min-height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -478,6 +478,7 @@ ul {
     top: -200px;
     left: 50%;
     width: 600px;
+    max-width: 100vw;
     height: 600px;
     background: radial-gradient(circle, var(--accent-blue-glow) 0%, transparent 70%);
     transform: translateX(-50%);
@@ -1235,20 +1236,21 @@ ul {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
         width: 280px;
         height: 100vh;
         background: var(--bg-secondary);
         flex-direction: column;
         padding: 80px 32px 32px;
         gap: 24px;
-        transition: right var(--transition-smooth);
+        transform: translateX(100%);
+        transition: transform var(--transition-smooth);
         border-left: 1px solid var(--border-glass);
         z-index: 999;
     }
 
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
     }
 
     .nav-toggle {
