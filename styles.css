@@ -488,8 +488,8 @@ ul {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
 }
 
 .service-card {
@@ -524,7 +524,7 @@ ul {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    padding: 32px;
+    padding: 20px;
     transition: background var(--transition-smooth);
 }
 
@@ -557,6 +557,10 @@ ul {
     margin-bottom: 8px;
     text-align: center;
     width: 100%;
+    min-height: 2.6em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -572,6 +576,11 @@ ul {
     transform: translateY(10px);
     transition: opacity var(--transition-smooth), transform var(--transition-smooth);
     line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.88em;
 }
 
 .service-card:hover p {
