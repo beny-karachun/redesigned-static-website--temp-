@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initCounterAnimation();
     initClientsCarousel();
+    init3DTiltEffect();
 });
 
 /* ── Infinite looping clients carousel ── */
@@ -183,4 +184,52 @@ function animateCounter(el) {
     }
 
     requestAnimationFrame(update);
+}
+
+/* ── 3D Image Interactive Hover Effect ── */
+function init3DTiltEffect() {
+    const tiltElements = document.querySelectorAll('.page-image img, .workshop-gallery-item, .service-card, .gallery-item, .about-image img');
+
+    tiltElements.forEach(el => {
+        el.addEventListener('mousemove', handleTilt);
+        el.addEventListener('mouseleave', resetTilt);
+        // Add a class for base transition
+        el.style.willChange = 'transform';
+    });
+
+    function handleTilt(e) {
+        const el = e.currentTarget;
+        const rect = el.getBoundingClientRect();
+
+        // Calculate mouse position relative to the element
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Calculate percentages from the center (-1 to 1)
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -10; // Max 10 deg rotation vertically
+        const rotateY = ((x - centerX) / centerX) * 10;  // Max 10 deg rotation horizontally
+
+        // Apply transform
+        el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.03, 1.03, 1.03)`;
+        el.style.transition = 'transform 0.1s ease-out';
+        el.style.zIndex = '10';
+
+        if (el.classList.contains('service-card') || el.classList.contains('workshop-gallery-item')) {
+            el.style.boxShadow = `${-rotateY}px ${rotateX}px 30px rgba(0, 0, 0, 0.4)`;
+        }
+    }
+
+    function resetTilt(e) {
+        const el = e.currentTarget;
+        el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        el.style.transition = 'transform 0.5s ease-out';
+        el.style.zIndex = '1';
+
+        if (el.classList.contains('service-card') || el.classList.contains('workshop-gallery-item')) {
+            el.style.boxShadow = '';
+        }
+    }
 }
