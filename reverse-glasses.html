@@ -28,7 +28,7 @@
     </nav>
 
     <section class="page-hero">
-        <div class="hero-bg"><img src="images/service-reverse-glasses.png" alt="משקפי ראייה הפוכה"></div>
+        <div class="hero-bg"><img src="images/reverse-glasses-banner.png" alt="משקפי ראייה הפוכה"></div>
         <div class="hero-overlay"></div>
         <div class="page-hero-content">
             <h1 class="reveal">משקפי ראייה הפוכה</h1>
@@ -67,11 +67,54 @@
                     </div>
                 </div>
                 <div class="page-image reveal reveal-delay-2">
-                    <img src="images/service-reverse-glasses.png" alt="משקפי ראייה הפוכה באירוע">
+                    <a href="https://youtu.be/FOrC3es5oGw" target="_blank" rel="noopener"
+                        style="display: block; position: relative; width: 100%; border-radius: 16px; overflow: hidden;">
+                        <img src="https://img.youtube.com/vi/FOrC3es5oGw/maxresdefault.jpg"
+                            alt="צפו בסרטון — משקפי ראייה הפוכה"
+                            style="width: 100%; display: block; border-radius: 16px;">
+                        <div
+                            style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); border-radius: 16px; transition: background 0.3s;">
+                            <svg width="68" height="48" viewBox="0 0 68 48">
+                                <path
+                                    d="M66.5 7.7s-.7-4.7-2.8-6.8C60.7-2 57.2-2 55.6-2.2 46.4-3 34-3 34-3s-12.4 0-21.6.8C10.8-2 7.3-2 4.3.9 2.2 3 1.5 7.7 1.5 7.7S.8 13.2.8 18.7v5.1c0 5.5.7 11 .7 11s.7 4.7 2.8 6.8c3 3 7 2.9 8.8 3.2 6.4.6 27 .8 27 .8s12.4 0 21.6-.8c1.6-.2 5.1-.2 8.1-3.1 2.1-2.1 2.8-6.8 2.8-6.8s.7-5.5.7-11v-5.1c0-5.5-.8-11-.8-11z"
+                                    fill="red" />
+                                <path d="M27 32l18-11-18-11z" fill="#fff" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="workshop-gallery" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title reveal"
+                style="text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--text-primary);">גלריית
+                משקפי ראייה הפוכה</h2>
+            <div class="workshop-gallery-grid reveal">
+                <div class="workshop-gallery-item">
+                    <img src="images/reverse-glasses-1.jpg" alt="אתגר טבעות עם משקפי היפוך" loading="lazy">
+                </div>
+                <div class="workshop-gallery-item">
+                    <img src="images/reverse-glasses-2.jpg" alt="בניית מגדל קוביות עם משקפי היפוך" loading="lazy">
+                </div>
+                <div class="workshop-gallery-item">
+                    <img src="images/reverse-glasses-3.jpg" alt="פעילות משקפי ראייה הפוכה" loading="lazy">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="workshop-lightbox" id="workshopLightbox">
+        <button class="workshop-lightbox-close" id="lightboxClose">✕</button>
+        <button class="workshop-lightbox-nav workshop-lightbox-prev" id="lightboxPrev">❮</button>
+        <button class="workshop-lightbox-nav workshop-lightbox-next" id="lightboxNext">❯</button>
+        <img class="workshop-lightbox-img" id="lightboxImg" src="" alt="">
+    </div>
 
     <footer class="footer">
         <div class="container">
